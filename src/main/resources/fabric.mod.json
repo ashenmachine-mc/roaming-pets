@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "roaming-pets",
+	"version": "${version}",
+	"name": "Roaming Pets",
+	"description": "Sneak + right-click a tamed pet to toggle between roaming freely and following you.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/roaming-pets/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ashenmachine.roaming_pets.RoamingPets"
+		],
+		"client": [
+			"com.ashenmachine.roaming_pets.client.RoamingPetsClient"
+		],
+		"fabric-datagen": [
+			"com.ashenmachine.roaming_pets.client.RoamingPetsDataGenerator"
+		]
+	},
+	"mixins": [
+		"roaming-pets.mixins.json",
+		{
+			"config": "roaming-pets.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

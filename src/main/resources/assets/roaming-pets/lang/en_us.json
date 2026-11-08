@@ -1,0 +1,6 @@
+{
+	"message.roaming-pets.roaming": "%s is now roaming freely",
+	"message.roaming-pets.following": "%s will now follow you",
+	"message.roaming-pets.radius_set": "Roaming radius set to %s blocks",
+	"message.roaming-pets.radius_unlimited": "Roaming radius set to unlimited"
+}
